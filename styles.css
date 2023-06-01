@@ -1,0 +1,126 @@
+/*https://coolors.co/00a6fb-0582ca-006494-003554-051923*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.container {
+    background-color: #00A6FB;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1200px;
+
+}
+
+header {
+    background-color: #006494;
+    display: flex;
+    flex-direction: column;
+
+    /*justify-content: center; */
+    /*if height use this*/
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #003554;
+    background-color: #00A6FB;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+header nav a:hover {
+    color: black;
+    backgruond-color: #00A6FB;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #65c1ef;*/
+    margin: 10px auto;
+    width: 80%;
+
+}
+
+footer {
+    background-color: #003554;
+    color: #00A6FB;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+
+}
+
+@media (min-width:600px) {
+
+    header nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    main {
+        display: flex;
+        gap: 70px;
+        margin: 0 30px;
+
+    }
+
+
+}
+
+/*Form*/
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+
+
+}
+
+.send-button-container {
+    margin: 0 auto;
+
+}
+
+label {
+    display: block;
+    padding-bottom: 7px;
+
+}
+
+/*.send-button-container input {
+    width: 30%;
+    min-width: 100px;
+
+}*/
+
+@media (min-width:600px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .send-button-container {
+        grid-column: span 2;
+
+
+    }
+
+
+}
